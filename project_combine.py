@@ -1,6 +1,5 @@
 """----------Calculator----------"""
-from ast import operator
-from secrets import choice
+
 
 # Addition operation
 def addition ():
