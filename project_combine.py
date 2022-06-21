@@ -61,7 +61,7 @@ while True:
     print("  Enter 'B' BMI Calculator")
     print("  Enter 'Q' Quit")
     calc = input ("  Please enter your option here: " ' ')
-    if calc == 'A':
+    if calc == 'A': # Simple Calculator operation
         list = []
         print(" Choose an operation\n")
         print("  Enter 'a' for Addition")
@@ -102,7 +102,7 @@ while True:
             elif c == 'cb': # Cubes operation
                 num1=int(input("Enter the Number:"))
                 cubes()
-            elif c == 'cbrt': # Cube operation
+            elif c == 'cbrt': # Cube Root operation
                 num1=int(input("Enter the Number:"))
                 cuberoot()
             else:
