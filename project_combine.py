@@ -61,8 +61,10 @@ while True:
     print("  Enter 'B' BMI Calculator")
     print("  Enter 'Q' Quit")
     calc = input ("  Please enter your option here: " ' ')
-    if calc == 'A': # Simple Calculator operation
+    if calc == 'A': 
+        # Simple Calculator operation
         list = []
+        # User choose operation needed
         print(" Choose an operation\n")
         print("  Enter 'a' for Addition")
         print("  Enter 's' for Substraction")
@@ -73,36 +75,44 @@ while True:
         print("  Enter 'cb' for Cubes")
         print("  Enter 'cbrt' for Cube root")
         print("  Enter 'q' for Quit")
-        print("-----------------------------------\n")  
-        c = input(" ")
+        print("-----------------------------------\n")
+        # User selection display
+        c = input("Enter your selection:" ' ')
         if c != 'q':
-            if c == 'a': # Addition operation
+            # Addition operation
+            if c == 'a':
                 num1=int(input("Enter 1st Number:"))
                 num2=int(input("Enter 2nd Number:"))
                 addition()
-
-            elif c == 's': # Subtraction operation
+            # Subtraction operation
+            elif c == 's': 
                 num1=int(input("Enter 1st Number:"))
                 num2=int(input("Enter 2nd Number:"))
                 subtraction()
-            elif c == 'm': # Multiplication operation
+            # Multiplication operation
+            elif c == 'm': 
                 num1=int(input("Enter 1st Number:"))
                 num2=int(input("Enter 2nd Number:"))
                 multiplication()
-            elif c == 'd': # Division operation
+            # Division operation
+            elif c == 'd':
                 num1=int(input("Enter 1st Number:"))
                 num2=int(input("Enter 2nd Number:"))
                 division()
-            elif c == 'sq': # Squares operation
+            # Squares operation
+            elif c == 'sq':
                 num1=int(input("Enter the Number:"))
                 squares()
-            elif c == 'sqrt': # Square Root operation
+            # Square Root operation
+            elif c == 'sqrt':
                 num1=int(input("Enter the Number:"))
                 squareroot()
-            elif c == 'cb': # Cubes operation
+            # Cubes operation
+            elif c == 'cb':
                 num1=int(input("Enter the Number:"))
                 cubes()
-            elif c == 'cbrt': # Cube Root operation
+            # Cube Root operation
+            elif c == 'cbrt':
                 num1=int(input("Enter the Number:"))
                 cuberoot()
             else:
@@ -113,6 +123,7 @@ while True:
     # BMI Calculator
     elif calc == 'B':
         """Print "Body Mass Index" and return None."""
+        # User input on height and weight
         print ("******************************************************")
         print ("Calculator for Body Mass Index")
         nama = str(input("Your name : "))
